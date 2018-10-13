@@ -23,5 +23,8 @@ COPY rar2fs-assets/30-rar2fs-mount /etc/cont-init.d/
 
 # Volumes
 VOLUME /config
-VOLUME /data
+VOLUME /media
+VOLUME /media2
+VOLUME /media3
+VOLUME /media4
 VOLUME /transcode
