@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <Date>2017-01-30</Date>
   <Changes>
@@ -10,15 +10,15 @@
   <Support>https://forums.plex.tv/categories/docker</Support>
   <Description>
     [b]Plex Media Server[/b][br][br]
- 
     Enjoy your media on all your devices.[br]
-    All your movie, TV Show, music, and photo collections at your fingertips, anywhere you go on all the devices you love. 
+    All your movie, TV Show, music, and photo collections at your fingertips, anywhere you go on all the devices you love. [br]
+    This Plex docker includes added transparent rar support (rar2fs).
   </Description>
   <Project>https://plex.tv/</Project>
   <Registry>https://hub.docker.com/r/plexinc/pms-docker/</Registry>
   <Repository>plexinc/pms-docker</Repository>
   <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Environment>
     <Variable>
       <Name>PLEX_CLAIM</Name>
@@ -34,7 +34,7 @@
     </Variable>
     <Variable>
       <Name>VERSION</Name>
-      <Value>latest</Value>
+      <Value>plexpass</Value>
     </Variable>
   </Environment>
   <Networking>
@@ -54,7 +54,22 @@
     </Volume>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/data</ContainerDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/media2</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/media3</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/media4</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
