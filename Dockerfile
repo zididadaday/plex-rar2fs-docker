@@ -11,8 +11,10 @@ RUN apt-get update && \
 # Install rar2fs
 COPY rar2fs-assets/install_rar2fs.sh /tmp/
 RUN /bin/sh /tmp/install_rar2fs.sh
-RUN mkdir /data-unrar
-
+RUN mkdir /media
+RUN mkdir /media2
+RUN mkdir /media3
+RUN mkdir /media4
 
 # CLEAN Image
 RUN apt-get remove -y autoconf build-essential git automake && \
@@ -24,8 +26,8 @@ COPY rar2fs-assets/30-rar2fs-mount /etc/cont-init.d/
 
 # Volumes
 VOLUME /config
-VOLUME /media
-VOLUME /media2
-VOLUME /media3
-VOLUME /media4
+VOLUME /media_hds
+VOLUME /media_series
+VOLUME /media_uhds
+VOLUME /media_vids
 VOLUME /transcode
