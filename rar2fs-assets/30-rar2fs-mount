@@ -29,4 +29,4 @@ rar2fs --seek-length=1 -o allow_other /media_series /media2
 rar2fs --seek-length=1 -o allow_other /media_uhds /media3
 rar2fs --seek-length=1 -o allow_other /media_vids /media4
 
-echo "Rar2fs setup complete - Mounted data drive"
+echo "Rar2fs setup complete - Mounted media drives"
