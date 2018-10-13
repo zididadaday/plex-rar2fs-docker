@@ -11,7 +11,8 @@ RUN apt-get update && \
 # Install rar2fs
 COPY rar2fs-assets/install_rar2fs.sh /tmp/
 RUN /bin/sh /tmp/install_rar2fs.sh
-RUN mkdir /media
+# Commented out /media, already exists, probably shouldn't be used
+# RUN mkdir /media
 RUN mkdir /media2
 RUN mkdir /media3
 RUN mkdir /media4
