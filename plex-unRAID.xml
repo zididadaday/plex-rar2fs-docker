@@ -2,7 +2,7 @@
 <Container>
   <Beta>True</Beta>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Date>2017-01-30</Date>
+  <Date>2018-10-13</Date>
   <Changes>
 [a href='https://forums.plex.tv/discussion/62832/plex-media-server#latest' target='_blank']Latest Plex Media Server changes[/a]
   </Changes>
@@ -15,8 +15,8 @@
     This Plex docker includes added transparent rar support (rar2fs).
   </Description>
   <Project>https://plex.tv/</Project>
-  <Registry>https://hub.docker.com/r/plexinc/pms-docker/</Registry>
-  <Repository>plexinc/pms-docker</Repository>
+  <Registry>https://hub.docker.com/r/zididadaday/plex-rar2fs/</Registry>
+  <Repository>zididadaday/plex-rar2fs:plexpass</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment>
