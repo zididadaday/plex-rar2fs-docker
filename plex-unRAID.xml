@@ -6,7 +6,7 @@
   <Changes>
 [a href='https://forums.plex.tv/discussion/62832/plex-media-server#latest' target='_blank']Latest Plex Media Server changes[/a]
   </Changes>
-  <Name>Plex Media Server</Name>
+  <Name>plex-rar2fs</Name>
   <Support>https://forums.plex.tv/categories/docker</Support>
   <Description>
     [b]Plex Media Server[/b][br][br]
